@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('pictures/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #1a5edb;
+            color: rgba(243, 244, 247, 0.233);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .btn-back:hover {
+            background-color: hsl(226, 75%, 51%);
+        }
+
+        .buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0b0ec4;
+            color: rgb(7, 3, 3);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: hsl(226, 86%, 50%);
+        }
+
+        .center-image {
+            max-width: 80%; 
+            max-height: 80%; 
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="btn-back" onclick="goBack()">Back</a>
+<div class="buttons">
+    <a href="profile.html" class="btn">Profile</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="referrals.html" class="btn">Referrals</a>
+</div>
+<img src="pictures\nooutput.png" alt="Your Image" class="center-image">
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
